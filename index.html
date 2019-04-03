@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Global Temperature</title>
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/social-messaging-productivity-1/128/world-512.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+    <link rel="stylesheet" href="dist/css/index.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="#page-top"><i class="fas fa-globe-americas"></i> Global Temperature</a>
+    			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    				<i class="fas fa-bars"></i>
+    			</button>
+          <div class="navbar-collapse collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" id="nav-item1" href="#">Link 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" id="nav-item2" href="#">Link 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" id="nav-item3" href="#">Link 3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" id="nav-item4" href="#">Link 4</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" id="nav-item5" href="#">Link 5</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="TitleSection"></div>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <form class="col-12 col-md-8 mt-3" id="temperatureForm">
+              <div class="form-group">
+                <label for="year">Inserta un año a calcular</label>
+                <input class="form-control" id="userYear">
+              </div>
+                <button type="submit" class="btn-grad">Calcular</button>
+            </form>
+
+            <div class="col-12 col-md-12 mt-3" id="temperatureText">La temperatura global en este momento de tiempo seria aproximadamente de: <p id="temperature">14.79 ºC</p></div>
+            <p class="mainText col-12 col-md-12">
+              El Calentamiento Global, es el termino con el que se conoce al fenómeno que ocurre cuando la temperatura media global de la atmosfera y de los océanos aumenta.
+              Este fenómeno es originado por múltiples razones, sin embargo el principal causante de este es el fenómeno conocido como Efecto Invernadero, fenómeno que se refiere
+              a la absorción de gases atmosféricos , de parte de la energía que el suelo emite, como consecuencia de haber sido calentado por la radiación solar.
+              <br>Así que, por medio del modelamiento y de la solución de la ecuación diferencial, el principal objetivo es crear conciencia y dar una alerta sobre el calentamiento global, debido a que si
+              este crecimiento no se controla, podríamos llegar a un punto critico en el cual veríamos arriesgada nuestra existencia como especie.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 mt-3" id="chartdiv">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src='dist/main.js'></script>
+    <script src='dist/js/navbar.js'></script>
+    <script src='dist/js/index.js'></script>
+    <script src='dist/js/chart.js'></script>
+    <script src='dist/js/function.js'></script>
+  </body>
+</html>

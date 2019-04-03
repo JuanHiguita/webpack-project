@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body  {
+  font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.Title{
+  text-align: center;
+  color:#f5f4f2;
+  margin-top: 4.5em;
+}
+
+.TitleSection{
+  background-image: url("../img/Earth.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+	background-size: cover;
+	height: 50vh;
+	width: 100vw;
+}
+
+.btn-grad {
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
+  width:100%;
+  height: 3em;
+  background-size: 200% auto;
+  color: white;
+  background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%);
+  transition: 0.5s;
+}
+.btn-grad:hover {
+  background-position: right center;
+}
+
+.mainText{
+  text-align:justify;
+}
+
+#temperatureText {
+  color:#DC5A48;
+  font-size:1.5em;
+}
+
+#temperature {
+  color: #000000;
+  font-size: 2em;
+}
+
+.fa-bars{
+  font-size:2em
+}
+
+#chartdiv {
+  width: 35em;
+  height: 500px;
+}
